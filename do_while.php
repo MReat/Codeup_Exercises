@@ -1,11 +1,11 @@
 <?php 
 
-// Adding from 1 to 100
-	// $start_number = 1;
+// Adding from 0 to 100 by 2
+	// $start_number = 0;
 
 	// do {
 	// 	echo "$start_number" . PHP_EOL;
-	// 	$start_number += 1;
+	// 	$start_number += 2;
 
 	// } while ($start_number <= 100);
 
