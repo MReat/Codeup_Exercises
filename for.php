@@ -18,6 +18,7 @@ if ($increment_number == 0) {
 	$increment_number = 1;
 } 
 
+For Loop FizzBuzz!
 for ($i = $beginning_number; $i <= $ending_number; $i += $increment_number) {
 	if ($i % 3 == 0  && $i % 5 == 0) {
 		echo "FizzBuzz!" . PHP_EOL . PHP_EOL;
@@ -33,5 +34,49 @@ for ($i = $beginning_number; $i <= $ending_number; $i += $increment_number) {
 		usleep(400000);
 	}
 }
+
+// While Loop FizzBuzz!
+// while ($beginning_number <= $ending_number) {
+
+// 	$new_number = $beginning_number;
+// 	if ($new_number == $beginning_number && $new_number % 5 != 0 || $new_number % 3 != 0) {
+// 		echo $new_number . PHP_EOL . PHP_EOL; 
+// 	}elseif ($new_number % 5 == 0 && $new_number % 3 == 0) {
+// 		echo "FizzBuzz!" . PHP_EOL . PHP_EOL;
+// 		usleep(400000);
+// 	} elseif ($new_number % 3 == 0) {
+// 		echo "Fizz!" . PHP_EOL . PHP_EOL;
+// 		usleep(400000);
+// 	} elseif ($new_number % 5 == 0) {
+// 		echo "Buzz!" . PHP_EOL . PHP_EOL;
+// 		usleep(400000);
+// 	} else {
+// 		echo $new_number . PHP_EOL . PHP_EOL;
+// 		usleep(400000);
+// 	}
+// 	$new_number = $beginning_number += $increment_number;
+// }
+
+// Do While Fizzbuzz
+// do {
+// 	$new_number = $beginning_number;
+// 	if ($new_number == $beginning_number && $new_number % 5 != 0 || $new_number % 3 != 0) {
+// 		echo $new_number . PHP_EOL . PHP_EOL; 
+// 	}elseif ($new_number % 5 == 0 && $new_number % 3 == 0) {
+// 		echo "FizzBuzz!" . PHP_EOL . PHP_EOL;
+// 		usleep(400000);
+// 	} elseif ($new_number % 3 == 0) {
+// 		echo "Fizz!" . PHP_EOL . PHP_EOL;
+// 		usleep(400000);
+// 	} elseif ($new_number % 5 == 0) {
+// 		echo "Buzz!" . PHP_EOL . PHP_EOL;
+// 		usleep(400000);
+// 	} else {
+// 		echo $new_number . PHP_EOL . PHP_EOL;
+// 		usleep(400000);
+// 	}
+// 	$new_number = $beginning_number += $increment_number;
+
+// } while ($beginning_number <= $ending_number);
 
  ?>
