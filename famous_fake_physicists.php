@@ -1,28 +1,23 @@
 <?php 
-// Converts array into list n1, n2, ..., and n3
 
-function humanizedList($array) {
-// Your solution goes here!
+$physicistsString = 'Gordon Freeman, Samantha Carter, Sheldon Cooper, Quinn Mallory, Bruce Banner, Tony Stark';
+$physicistsArray = explode(', ', $physicistsString);
+
+function humanizedList($array, $sort = false) {
+
+	if ($sort) {
+		asort($array);
+	}
+	$minusLastElement = array_pop($array);
 	$implodeTarget = implode(', ', $array);
-	return $implodeTarget;
+	$newCombined = $implodeTarget . ", and " . $minusLastElement;
+	return $newCombined;
 	
 }
 
-// List of famous peeps
-$physicistsString = 'Gordon Freeman, Samantha Carter, Sheldon Cooper, Quinn Mallory, Bruce Banner, Tony Stark';
+$famousFakePhysicists = humanizedList($physicistsArray, true);
 
-// TODO: Convert the string into an array
-$physicistsArray = explode(', ', $physicistsString);
-asort($physicistsArray);
-print_r($physicistsArray);
-$minusLastPhysicist = array_pop($physicistsArray);
-
-
- // Humanize that list
- $famousFakePhysicists = humanizedList($physicistsArray);
-
- // Output sentence
- echo "Some of the most famous fictional theoretical physicists are {$famousFakePhysicists}, and {$minusLastPhysicist}." . PHP_EOL;
+echo "Some of the most famous fictional theoretical physicists are {$famousFakePhysicists}." . PHP_EOL;
 
 
  ?>
