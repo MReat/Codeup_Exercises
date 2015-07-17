@@ -13,14 +13,14 @@ function parseContacts($filename)
 	    $contactsArray = explode('|', $contact);
 
 	    // Option 1
-	    $contacts[$key]['name'] = $contactsArray[0];
-	    $contacts[$key]['number'] = formatNumber($contactsArray[1]);
+	    // $contacts[$key]['name'] = $contactsArray[0];
+	    // $contacts[$key]['number'] = formatNumber($contactsArray[1]);
 
 	    // Option 2
-	    // $contacts[] = array(
-	    // 	'name' => $contactsArray[0]),
-	    // 	'number' => formatNumber($contactsArray[1])
-    	// );
+	    $contacts[] = array(
+	    	'name' => $contactsArray[0],
+	    	'number' => formatNumber($contactsArray[1])
+    	);
 	   
     	
     }
