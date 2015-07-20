@@ -9,11 +9,11 @@ function logMessage($logLevel, $message)
 }
 
 function logInfo ($message) {
-	logMessage("INFO", $message);
+	return logMessage("INFO", $message);
 }
 
 function logError ($message) {
-	logMessage("ERROR", $message);
+	return logMessage("ERROR", $message);
 }
 
 logInfo("This is an info message.");
