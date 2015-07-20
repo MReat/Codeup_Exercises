@@ -21,35 +21,3 @@ function combineArrays ($array1, $array2)
 }
 print_r(combineArrays($names, $compare));
 
-// function nameCheck ($needle, $haystack) 
-// {
-// 	$result = array_search($needle, $haystack);
-// 	if ($result !== FALSE) {
-// 		echo "{$needle} belongs to the group." . PHP_EOL;
-// 		return TRUE ;
-// 	} else {
-// 		echo "{$needle} does NOT belong to the group." . PHP_EOL;
-// 		return FALSE . PHP_EOL;
-// 	}
-
-// }
-
-// var_dump(nameCheck('Tina', $names));
-// var_dump(nameCheck('Bob', $names));
-
-// function compareArrays ($array1, $array2) 
-// {
-// 	$match = 0;
-// 	$notMatch = 0;
-// 	foreach ($array1 as $item) {
-// 		$result = array_search($item, $array2);
-// 		if ($result !== FALSE) {
-// 			return $match++;
-// 		} else {
-// 			return $notMatch++;
-// 		}
-// 	}
-// 	return $match;
-// }
-
-// var_dump(compareArrays($names, $compare));
