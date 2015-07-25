@@ -41,19 +41,19 @@ $car = 'Cadillac Escalade';
 function list_cars($array, $item) // added 2 parameters to allow for 1 item in array to be selected and outputted
 {
   foreach ($array as $model => $carDetails) {
-    // if($model == $item) {
+    if($model == $item) {
       foreach ($carDetails as $carDetail => $detail){
      }
-        // echo("") . PHP_EOL;
-        // print_r("I have a " . $carDetails['year'] . " {$model}.  Details below:" . PHP_EOL);
-        // echo("--------------------------------------------------" . PHP_EOL);
-        // print_r($carDetails['doors'] . " Door " . $carDetails['year'] . " {$model}" . PHP_EOL);
-        // print_r("Color: " . $carDetails['color'] . PHP_EOL);
-        // print_r("Mileage: " . $carDetails['mileage'] . PHP_EOL);
-        // print_r("Sunroof: " . changeToNA($carDetails['sunroof']) . PHP_EOL);
-        // print_r("Convertable: " . changeToNA($carDetails['convertable']) . PHP_EOL);
-        // print_r("License NO: " . $carDetails['license'] . PHP_EOL . PHP_EOL);
-    // }
+        echo("") . PHP_EOL;
+        print_r("I have a " . $carDetails['year'] . " {$model}.  Details below:" . PHP_EOL);
+        echo("--------------------------------------------------" . PHP_EOL);
+        print_r($carDetails['doors'] . " Door " . $carDetails['year'] . " {$model}" . PHP_EOL);
+        print_r("Color: " . $carDetails['color'] . PHP_EOL);
+        print_r("Mileage: " . $carDetails['mileage'] . PHP_EOL);
+        print_r("Sunroof: " . changeToNA($carDetails['sunroof']) . PHP_EOL);
+        print_r("Convertable: " . changeToNA($carDetails['convertable']) . PHP_EOL);
+        print_r("License NO: " . $carDetails['license'] . PHP_EOL . PHP_EOL);
+    }
   }
  
 }
