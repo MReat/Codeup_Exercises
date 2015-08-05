@@ -13,7 +13,7 @@ class Log
 
 	public function logMessage($logLevel, $message)
 	{
-		fwrite($this->handle, PHP_EOL . "[{$logLevel}] {$message}");
+		fwrite($this->handle, PHP_EOL . date("Y-m-d H-i-s") . "[{$logLevel}] {$message}");
 	}
 
 	public function info($message)
