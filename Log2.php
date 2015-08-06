@@ -8,10 +8,9 @@ class Log
 	public function __construct($prefix = "log")
 	{
 		// $this->filename = $prefix . "-" . date('Y-m-d') . '.log';
-		if ($this->setFilename($prefix)) {
+		$this->setFilename($prefix);
 
-			$this->handle = fopen($this->filename, 'a');	
-		}
+		$this->handle = fopen($this->filename, 'a');	
 	}
 
 	protected function setFilename($prefix)
@@ -20,27 +19,13 @@ class Log
         $date = date('Y-m-d');
         // Set the filename with user defined prefix.
         if (is_string($prefix)) {
-        	$this->prefix = trim($prefix);
-            return $this->filename = "$prefix-" . $date . ".log"; 
-
-            if (touch($this->filename) && is_writable($this->filename)) {
-            	return TRUE;
-            } else {
-	            die("Not Writable." . PHP_EOL);
-	        }
-
+            return $this->filename = "$prefix-" . $date . ".log";
         } else {
-        	die("No string entered.  Please enter proper format." . PHP_EOL);
+            die("NO string for set filename");
         }
 	}
 
-	public function getFilename () {
-		return $this->filename;
-	}
-
-	public function getHandle () {
-		return $this->handle;
-	}
+	public 
 
 	public function logMessage($logLevel, $message)
 	{

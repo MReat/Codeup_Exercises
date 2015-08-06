@@ -3,7 +3,7 @@ require_once 'rectangle.php';
 require_once 'square.php';
 
 
-$rectangle1 = new Rectangle(2,5);
+$rectangle1 = new Rectangle(3,7);
 $rectangle2 = new Rectangle(1,4);
 $rectangle3 = new Rectangle(10,5);
 
