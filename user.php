@@ -28,7 +28,6 @@ class User extends Model
 		$stmt->bindValue(':last_name', $this->attributes['last_name'], PDO::PARAM_STR);
 		$stmt->bindValue(':id', $this->attributes['id'], PDO::PARAM_INT);
 		$stmt->execute();
-
 	}
 
 	public function insert ()
@@ -87,7 +86,6 @@ class User extends Model
         return $instance;
 	}
 
-}
-
+}	
 
  ?>
